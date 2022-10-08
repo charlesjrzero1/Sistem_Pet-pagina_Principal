@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>System_Pet</title>
+  <!--Framework usando Bulma, incorparado no HTML. -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="js.js"></script>
+</head>
+<div>
+  <!--Navbar-->
+  <nav class="navbar is-primary" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <div class="navbartitle">
+        <p>System_Pet</p>
+      </div>
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+
+    <div class="navbar-end">
+      <div class="navbar-item">
+        <div class="buttons">
+          <a class="button is-warning" href="./Page_Cadastro/index3.html">
+            <strong>Cadastrar</strong>
+          </a>
+          <a class="button is-light" href="./Page_login/index2.html">
+            Log in
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+
+
+
+
+
+  <!--Formulario.-->
+  <div class="columns" id="form-esquerda">
+  <!--coluna da Esquerda.-->
+  <div class="column is-4">
+  <!--container da Esquerda-->
+  <div class="container" id="esquerda">
+  <br>
+  <br>
+  <p class="title">Formulario de Pesquisa.</p>
+  <br>
+  
+  <div class="form">
+  <caption>
+  <h2>Nome do Tutor</h2>
+  </caption>
+  <input class="input is-rounded" type="text" placeholder="Nome do Tutor." id="Nome">
+  <br>
+  <br>
+  <caption>
+  <h2>Nome do Pet.</h2>
+  </caption>
+  <input class="input is-rounded" type="text" placeholder="Insira o nome" id="Pet">
+  <br>
+  <br>
+  <div class="select is-rounded"><select id="semana">
+  <option>Segunda-Sexta</option>
+  <option>Sabados-Feriados</option>
+  </select>
+  </div>
+  
+  
+  
+  <br>
+  <br>
+  <div class="select is-rounded">
+  <select id="Porte">
+  <option>Porte do Animal</option>
+  <option>Pequeno</option>
+  <option>Grande</option>
+  </select>
+  </div>
+  <br>
+  <br>
+  <button class="button is-primary" onclick="show()">Pesquisa</button>
+  </div>
+  </div>
+  
+</div>
+<!--coluna da Direita.-->
+<div class="column">
+  <br>
+<!--container da Direita.-->
+<p id="introdução"></p>
+<p id="introdução1"></p>
+ <div id="result" > 
+  
+  <center><p id="local"></p></center> 
+  <center><p id="valor"></p></center> 
+  <center><p id="distancia"></p></center> 
+  <center><p id="button"></p></center> 
+
+
+</div>
+<div class="container">
+<img src="https://media.giphy.com/media/lTIc2y6WcdUygQiJqG/giphy.gif" alt="">
+</div>
+</div>
+</div>
+
+  
+
+ 
+<br>
+<br>
+<div class="container"><nav class="pagination" role="navigation" aria-label="pagination">
+
+  <ul class="pagination-list">
+    <li>
+      <a class="pagination-link is-current" aria-label="Page 1" aria-current="page" href="../index.html" >1</a>
+    </li>
+    <li>
+      <a class="pagination-link" aria-label="Goto page 2" href="../Page_Cadastro/index3.html">2</a>
+    </li>
+    <li>
+      <a class="pagination-link " aria-label="page 3"  href="./Page_login/index2.html">3</a>
+    </li>
+  </ul>
+</nav></div>
+<br>
+
+    <footer class="footer">
+      <div class="content has-text-centered">
+        <p>
+          <strong>System_Pet</strong> by <a href="https://www.linkedin.com/in/charles-junio-69997716a
+          ">Charles Oliveira</a>. The source code is licensed
+          <a href="https://github.com/charlesjrzero1">MIT</a>. The website content
+          is licensed CC BY NC SA 4.0.
+        </p>
+      </div>
+    </footer>
+
+</body>
+
+</html>
